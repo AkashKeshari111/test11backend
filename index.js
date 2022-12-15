@@ -3,7 +3,7 @@ const connect = require("./Config/db");
 const dotenv= require('dotenv').config();
 const cors=require("cors");
 const shoppingApp=require("./Router/shopping.router")
-
+const bookmarksApp=require("./Router/bookmark.router")
 
 
 
@@ -16,6 +16,8 @@ app.use(express.json());
 
 //............................
 app.use("/",shoppingApp)
+app.use("/",bookmarksApp)
+
 
 
 
