@@ -2,7 +2,7 @@ const { Schema, model } = require("mongoose");
 
 const shoppingSchema = new Schema({
   Title: {type:String,required:true},
-  Quantity: {type:String,required:true},
+  Quantity: {type:Number,required:true},
   Priority: {type:String,required:true},
   Description: {type:String,required:true},
 },{
